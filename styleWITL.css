@@ -1,0 +1,58 @@
+/*General*/
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    p {
+        color: rgb(85, 85, 85);
+    }
+
+    a {
+        color: blue;
+        text-decoration: none; /* This removes the default underline from links */
+    }
+    
+    a:hover {
+        text-decoration: underline; /* This adds an underline when you hover over the link */
+    }
+    
+
+    .image-container {
+        display: flex;
+        justify-content: space-between; 
+    }
+    
+    .image-container img {
+        width: calc(25% - 6px);
+        margin: 3px; 
+    }
+    
+
+    .home-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db; /* Change this to your preferred button color */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .home-button:hover {
+        background-color: #2980b9; /* Slightly darker shade for hover effect */
+    }
+    
+    

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQ.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Caleb Klinger</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="whereisthelove.html">Where Is The Love</a></li> <!-- Updated this line -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Caleb Klinger</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="whereisthelove.html" onclick="toggleMenu()">Where Is The Love</a></li> <!-- Updated this line -->
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello World I Am</p>
+            <h1 class="title">Caleb Klinger</h1>
+            <p class="section__text__p2">Aspiring Data Scientist, Photographer, and Content Creator </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div id="social-container">
+                <a href="https://www.linkedin.com/in/caleb-klinger-38350421b/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon">
+                </a>
+                <a href="https://github.com/TrippingLettuce" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/github.png" alt="GitHub profile" class="icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+        <div class="section__pic-container">
+            <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+            <div class="details-container">
+                <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+                />
+                <h3>Experience</h3>
+                <p>8 months <br /><b>Software Developer</b><br /><a href="https://www.joinraize.com/" target="_blank" rel="noopener noreferrer">@Raize</a> & @Fiverr</p>
+                <h3>-------------</h3>
+                <p>4+ years <br /><b>Cook & Supervisor</b><br />@Jamba & @Donminos</p>
+            </div>
+            <div class="details-container">
+                <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.S. Computer Science<br />Minor Photography</p>
+                <img
+                src="./assets/ach.png"
+                alt="Education icon"
+                class="icon"
+                />
+                <h3>Achievements</h3>
+                <p>Udemy ML & Data Science Masterclass<br /></p>
+            </div>
+            </div>
+            <div class="text-container">
+            <p>
+                I am Data Science/Software Developer Senior in pursuit of a B.S. in Computer Science. I am also a Quick
+                Learner, have Strong Communication Skills, and Leadership Skills with a Strong Eagerness for Knowledge.
+                People know me as a person who is fun to work with, very creative, and a good improviser.
+            </p>
+            </div>
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/p1.png"
+                alt="Where is the Love"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Where is the Love?</h2>
+            <p>A Statistical Analysis of Music Genres Lyrics</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='whereisthelove.html'">
+                Read Me
+            </button>
+            
+            
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TrippingLettuce/Where-is-the-love', '_blank')"                >Github
+            </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/p3.png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">GPT Blogs</h2>
+            <p>An Automatic AI Generated WordPress Blog Creator</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TrippingLettuce/ChatGPT-Generated-Articles-to-WordPress', '_blank')"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/p2.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">Shopify Scrapper</h2>
+            <p>Shopify Sales, Products, and Info Scrapper</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TrippingLettuce/Shopify-Drop-Ship-Discord-Bot', '_blank')"                >
+                Github
+                </button>
+            </div>
+            </div>
+        
+
+        
+        </div>
+
+        <div class="about-containers">
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/p4.png"
+                alt="Where is the Love"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">YTB Discord Music Bot</h2>
+            <p>A bot that displays currently listening, liked music, and recommends similar music.ect (live)</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TrippingLettuce/DiscordYoutubeMusicBot', '_blank')"                >
+                Github
+                </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/p5.png"
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title"> Auto-Sales-Navigator            </h2>
+            <p>A web crawler that helps add mass amounts of linkden users to marketing email list</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TrippingLettuce/Auto-Sales-Navigator', '_blank')"
+                >
+                Github
+                </button>
+            </div>
+            </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                src="./assets/p6.png"
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">C- Complier</h2>
+            <p>Complier built using C</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TrippingLettuce/405-Compiler', '_blank')"                >
+                Github
+                </button>
+            </div>
+            </div>
+        
+        </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+
+    </section>
+
+    
+    <footer>
+        <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Experience</a></li>
+            <li><a href="#photography">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        <p>Made by Caleb Klinger :)</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
